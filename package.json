@@ -1,0 +1,23 @@
+{
+  "name": "webworkers-bs",
+  "version": "0.1.0",
+  "keywords": [
+    "reasonml",
+    "BuckleScript",
+    "webworkers"
+  ],
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "jest",
+    "webpack": "webpack -w"
+  },
+  "devDependencies": {
+    "bs-platform": "2.1.0",
+    "worker-loader": "1.1.0",
+    "webpack": "3.8.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
