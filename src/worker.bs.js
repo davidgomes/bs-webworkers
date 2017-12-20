@@ -2,11 +2,11 @@
 'use strict';
 
 
-onmessage = function(e) {
-  console.log("message received " + String(e));
-  postMessage("my result");
-  return /* () */0;
-}
+self.onmessage = (function (e) {
+    console.log("I am the Web Worker and I have received a message:");
+    console.log(e.data);
+    postMessage("my result");
+    return /* () */0;
+  });
 
-exports.onmessage = onmessage;
-/* No side effect */
+/*  Not a pure module */

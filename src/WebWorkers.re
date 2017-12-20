@@ -15,4 +15,8 @@ type webWorker = {.
 
 [@bs.set] external onMessage : (webWorker, MessageEvent.t => unit) => unit = "onmessage";
 
+type window;
+[@bs.val] external window : window = "self";
+[@bs.set] external setWorkerOnMessage : (window, MessageEvent.t => unit) => unit = "onmessage";
+
 /* [@bs.val] external john : person = "john"; */

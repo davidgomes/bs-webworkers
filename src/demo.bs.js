@@ -2,8 +2,6 @@
 'use strict';
 
 
-console.log("Hello, BuckleScript and Reason!");
-
 var worker = new Worker("worker.js");
 
 var msg = {
@@ -12,9 +10,9 @@ var msg = {
 
 worker.postMessage(msg);
 
-function msgBackHandler(name) {
-  console.log("msgBackHandler");
-  console.log(name);
+function msgBackHandler(e) {
+  console.log("I am the main thread and I have received a message back from the worker:");
+  console.log(e.data);
   return /* () */0;
 }
 
@@ -23,4 +21,4 @@ worker.onmessage = msgBackHandler;
 exports.worker         = worker;
 exports.msg            = msg;
 exports.msgBackHandler = msgBackHandler;
-/*  Not a pure module */
+/* worker Not a pure module */
