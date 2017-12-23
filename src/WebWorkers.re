@@ -1,6 +1,6 @@
 module MessageEvent = {
   type t;
-  [@bs.get] external data : t => string = "";
+  [@bs.get] external data : t => 'a = "";
 };
 
 type webWorker = {.
@@ -11,7 +11,7 @@ type webWorker = {.
 
 [@bs.val] external postMessageFromW : ('a) => unit = "postMessage";
 
-[@bs.send] external postMessage : (webWorker, Js.t({..})) => unit = "postMessage";
+[@bs.send] external postMessage : (webWorker, 'a) => unit = "postMessage";
 
 [@bs.set] external onMessage : (webWorker, MessageEvent.t => unit) => unit = "onmessage";
 
