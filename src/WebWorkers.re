@@ -3,13 +3,9 @@ module MessageEvent = {
   [@bs.get] external data : t => 'a = "";
 };
 
-type webWorker = {.
-    [@bs.set] "onMessage": (MessageEvent.t) => unit
-};
+type webWorker;
 
 [@bs.new] external create_webworker : string => webWorker = "Worker";
-
-[@bs.val] external postMessageFromW : ('a) => unit = "postMessage";
 
 [@bs.send] external postMessage : (webWorker, 'a) => unit = "postMessage";
 
@@ -17,4 +13,6 @@ type webWorker = {.
 
 type window;
 [@bs.val] external window : window = "self";
-[@bs.set] external setWorkerOnMessage : (window, MessageEvent.t => unit) => unit = "onmessage";
+[@bs.set] external onmessage : (window, MessageEvent.t => unit) => unit = "onmessage";
+
+[@bs.val] external postMessageFromWorker : ('a) => unit = "postMessage";
