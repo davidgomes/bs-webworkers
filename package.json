@@ -1,22 +1,23 @@
 {
-  "name": "webworkers-bs",
-  "version": "0.1.0",
-  "keywords": [
-    "reasonml",
-    "BuckleScript",
-    "webworkers"
-  ],
-  "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "webpack": "webpack-dev-server"
-  },
-  "devDependencies": {
-    "bs-platform": "2.1.0",
-    "webpack": "3.8.1",
-    "webpack-dev-server": "2.9.7"
-  },
-  "author": "David Gomes <davidrafagomes@gmail.com>",
-  "license": "MIT"
+    "name": "webworkers-bs",
+    "version": "0.1.0",
+    "keywords": [
+        "reason",
+        "reasonml",
+        "Bucklescript",
+        "webworkers"
+    ],
+    "scripts": {
+        "build": "bsb -make-world",
+        "start": "bsb -make-world -w",
+        "clean": "bsb -clean-world",
+        "webpack": "webpack-dev-server"
+    },
+    "devDependencies": {
+        "bs-platform": "2.1.0",
+        "webpack": "3.8.1",
+        "webpack-dev-server": "2.9.7"
+    },
+    "author": "David Gomes <davidrafagomes@gmail.com>",
+    "license": "MIT"
 }
