@@ -18,15 +18,4 @@ module.exports = {
     resolve: {
         modules: [path.resolve(ROOT_DIR, "src"), "node_modules"]
     },
-    module: {
-        rules: [
-            {
-                test: /\.worker\.js$/,
-                use: [
-                    { loader: "worker-loader" },
-                    { loader: "babel-loader?cacheDirectory" }
-                ]
-            }
-        ]
-    }
 };

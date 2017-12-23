@@ -10,15 +10,13 @@
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
-    "test": "jest",
     "webpack": "webpack-dev-server"
   },
   "devDependencies": {
     "bs-platform": "2.1.0",
     "webpack": "3.8.1",
-    "webpack-dev-server": "2.9.7",
-    "worker-loader": "1.1.0"
+    "webpack-dev-server": "2.9.7"
   },
-  "author": "",
+  "author": "David Gomes <davidrafagomes@gmail.com>",
   "license": "MIT"
 }
