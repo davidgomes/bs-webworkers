@@ -5,4 +5,4 @@ WebWorkers.setWorkerOnMessage(
     Js.log(WebWorkers.MessageEvent.data(e));
     WebWorkers.postMessageFromWorker("my result")
   }
-)
+);
