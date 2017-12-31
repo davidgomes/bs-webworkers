@@ -3,7 +3,10 @@ module MessageEvent = {
   [@bs.get] external data : t => 'a = "";
 };
 
-type webWorker;
+type webWorker = {.
+  [@bs.val] "onmessage": unit => {.},
+  [@bs.val] "url": string
+};
 
 [@bs.new] external create_webworker : string => webWorker = "Worker";
 

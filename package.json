@@ -7,14 +7,22 @@
         "Bucklescript",
         "webworkers"
     ],
+    "jest": {
+        "setupFiles": [
+            "/Users/davidgomes/src/webworkers-bs/setup.js"
+        ]
+    },
     "scripts": {
         "build": "bsb -make-world",
         "start": "bsb -make-world -w",
         "clean": "bsb -clean-world",
-        "webpack": "webpack-dev-server"
+        "webpack": "webpack-dev-server",
+        "test": "jest"
     },
     "devDependencies": {
+        "bs-jest": "0.2.0",
         "bs-platform": "2.1.0",
+        "jest": "22.0.4",
         "webpack": "3.8.1",
         "webpack-dev-server": "2.9.7"
     },
