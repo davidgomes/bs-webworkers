@@ -1,5 +1,6 @@
 {
-    "name": "webworkers-bs",
+    "name": "bs-webworkers",
+    "description": "Bucklescript bindings for Web Workers",
     "version": "0.1.0",
     "keywords": [
         "reason",
@@ -19,6 +20,8 @@
         "webpack": "webpack-dev-server",
         "test": "jest"
     },
+    "bugs": "https://github.com/davidgomes/bs-webworkers/issues",
+    "homepage": "https://github.com/davidgomes/bs-webworkers",
     "devDependencies": {
         "bs-jest": "0.2.0",
         "bs-platform": "2.1.0",
@@ -26,6 +29,10 @@
         "webpack": "3.8.1",
         "webpack-dev-server": "2.9.7"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/davidgomes/bs-webworkers"
+    },    
     "author": "David Gomes <davidrafagomes@gmail.com>",
     "license": "MIT"
 }
