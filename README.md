@@ -17,6 +17,8 @@ Read more about these [here](http://davidgom.es/2017/12/23/reasonml-webworkers-b
 }
 ```
 
+Look in the `example/` directory for an example of how to use the bindings.
+
 # Build
 ```
 npm install
