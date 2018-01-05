@@ -1,4 +1,4 @@
-let worker = WebWorkers.create_webworker("worker.js");
+let worker = WebWorkers.create_webworker("worker.bs.js");
 
 let msg = {"text": "Hello world"};
 

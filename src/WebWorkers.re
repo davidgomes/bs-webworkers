@@ -4,8 +4,8 @@ module MessageEvent = {
 };
 
 type webWorker = {.
-  [@bs.val] "onmessage": unit => {.},
-  [@bs.val] "url": string
+    "onmessage": unit => {.},
+    "url": string
 };
 
 [@bs.new] external create_webworker : string => webWorker = "Worker";

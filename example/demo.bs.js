@@ -2,7 +2,7 @@
 'use strict';
 
 
-var worker = new Worker("worker.js");
+var worker = new Worker("worker.bs.js");
 
 var msg = {
   text: "Hello world"
