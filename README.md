@@ -41,7 +41,7 @@ WebWorkers.setWorkerOnMessage(
 1. Install the bindings using `npm install --save bs-webworkers`
 2. Add the bindings to `bsconfig.json`:
 
-```
+```json
 {
   "bs-dependencies": [
       "bs-webworkers"
