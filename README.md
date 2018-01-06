@@ -9,7 +9,7 @@ Read more about these [here](http://davidgom.es/2017/12/23/reasonml-webworkers-b
 The main script creates a new Web Worker from the `worker.re` script and posts a message to it. The Web Worker replies back to that message. The main thread listens to that and prints out the message it received from the Web Worker.
 
 **main.re**
-```
+```ocaml
 let worker = WebWorkers.create_webworker("worker.bs.js");
 
 let msg = {"text": "Hello world"};
@@ -25,7 +25,7 @@ WebWorkers.onMessage(worker, msgBackHandler);
 ```
 
 **worker.re**
-```
+```ocaml
 WebWorkers.setWorkerOnMessage(
   WebWorkers.self,
   (e: WebWorkers.MessageEvent.t) => {
