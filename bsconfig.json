@@ -1,6 +1,5 @@
 {
   "name": "bs-webworkers"
-  "version": "0.2.0",
   "sources": [
     {
       "dir": "src"
