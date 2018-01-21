@@ -21,6 +21,5 @@
   "bs-dev-dependencies": [
     "bs-jest"
   ],
-  "namespace": true,
   "refmt": 3
 }
