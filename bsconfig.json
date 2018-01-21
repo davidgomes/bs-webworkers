@@ -1,5 +1,5 @@
 {
-  "name": "bs-webworkers"
+  "name": "bs-webworkers",
   "sources": [
     {
       "dir": "src"
