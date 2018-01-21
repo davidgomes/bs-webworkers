@@ -1,7 +1,7 @@
 {
     "name": "bs-webworkers",
     "description": "Bucklescript bindings for Web Workers",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "keywords": [
         "reason",
         "reasonml",
