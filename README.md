@@ -2,7 +2,7 @@
 
 This repository contains bindings for the [Web Workers API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/).
 
-Read more about these [here](http://davidgom.es/2017/12/23/reasonml-webworkers-bindings.html), but keep in mind these bindings have been improved since this article was written.
+Read more about these [here](https://davidgom.es/writing-reasonml-bindings-for-javascript-apis/), but keep in mind these bindings have been improved since this article was written.
 
 ## Example
 
